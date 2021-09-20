@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header --------------------------------------------- */
+.header{
+    padding: 20px 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+/* Main */
+
+.page__1{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+    height: 70vh;
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+
+.vignette__container--left{
+    width: 35%;
+    height: 95%;
+}
+.vignette__1,
+.vignette__2{
+    height: calc(50% - 10px);
+    border: 3px solid black;
+}
+.vignette__1{
+    margin-bottom: 20px;
+}
+
+.vignette__3{
+    width: 60%;
+    height: 95%;
+    border: 3px solid black;
+}
