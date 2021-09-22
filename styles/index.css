@@ -14,17 +14,18 @@
     background-color: black;
 }
 
-/* Main */
-
-.page__1{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-
+/* Main -----------------------------------------------*/
+.page{
     height: 70vh;
     width: 80%;
     margin: 0 auto;
     border: 3px solid black;
+}
+/* Página 1 ----------------------------- */
+.page--1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .vignette__container--left{
@@ -39,9 +40,62 @@
 .vignette__1{
     margin-bottom: 20px;
 }
-
 .vignette__3{
     width: 60%;
     height: 95%;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%); */
     border: 3px solid black;
+}
+.vignette__1,
+.vignette__2, 
+.vignette__3{
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dibujos y animaciones de la primera página */
+/* viñeta 1 */
+.eyes__sleep{
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 20px);
+
+    /* margin: 0 auto; */
+    height: .8em;
+    width: 2.7em;
+    border-radius: 10px;
+    background-color: black;
+}
+.eyebrows{
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 58px);
+
+    height: 5em;
+    width: 7em;
+    border-radius: 50%;
+    border: .6em solid black;
+}
+.eyebrows::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -20%;
+    display: inline-block;
+    height: 5em;
+    width: 8em;
+    background-color: white;
+}
+
+/* viñeta 2 */
+.kare__eyes{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    z-index: 10;
+
+    height: 2.7em;
+    width: .8em;
+    border-radius: 10px;
+    background-color: black;
 }
