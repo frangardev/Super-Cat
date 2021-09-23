@@ -88,7 +88,7 @@
 }
 
 /* viñeta 2 */
-.kare__eyes{
+.eyes{
     position: absolute;
     top: calc(50% - 10px);
     left: calc(50% - 10px);
@@ -98,4 +98,61 @@
     width: .8em;
     border-radius: 10px;
     background-color: black;
+}
+
+
+
+/* página 2 ------------------------------------------ */
+.page--2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.vignette__4,
+.vignette__5{
+    height: 95%;
+    width: 45%;
+    border: 3px solid black;
+}
+/* viñeta 4 */
+.vignette__4,
+.signal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vignette__4{
+    background-color: black;
+}
+.signal{
+    height: 200px;
+    width: 220px;
+    border-radius: 50%;
+    /* border: 3px solid rgb(199, 185, 185); */
+    background-color: white;
+}
+.cat__signal{
+    position: relative;
+    z-index: 1;
+    height: 100px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: gray;
+} 
+.cat__signal__qewears{
+    position: absolute;
+    top: -8px;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    clip-path: polygon(48% 0, 0% 100%, 100% 73%);
+    background-color: gray;
+    transform: rotate(-10deg);
+}
+.cat__signal__qewears--right{
+    position: absolute;
+    left: 75px;
+    /* background-color: tomato; */
+    height: 20px;
+    transform: rotate(260deg);
 }
