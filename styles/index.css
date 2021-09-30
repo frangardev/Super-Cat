@@ -24,7 +24,7 @@
     border: 3px solid black;
 }
 /* Página 1 ----------------------------- */
-.page--1{
+.page--1, .page--4{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,14 +35,17 @@
     height: 95%;
 }
 .vignette__1,
-.vignette__2{
+.vignette__2,
+.vignette__8,
+.vignette__9{
     height: calc(50% - 10px);
     border: 3px solid black;
 }
-.vignette__1{
+.vignette__1, .vignette__8{
     margin-bottom: 20px;
 }
-.vignette__3{
+.vignette__3,
+.vignette__10{
     width: 60%;
     height: 95%;
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%); */
@@ -126,9 +129,9 @@
     border: .2em solid black;
 }
 
-.karen{
+/* .karen{
   
-}
+} */
 
 
 .kare__eyes{
@@ -152,7 +155,8 @@
     height: 1.2em;
     width: 1.3em;
     border-radius: 30px;
-    background-color: burlywood;
+    background-color: white;
+    border: 3px solid black;
 }
 
 /* página 2 ------------------------------------------ */
@@ -315,9 +319,9 @@
     border-radius: 50%;
     overflow: hidden;
 }
-.cape__inside{
+/* .cape__inside{
     
-}
+} */
 .cat__paw{
     position: absolute;
     width: 3.5em;
@@ -405,4 +409,78 @@
     width: 3em;
     height: 3em;
     bottom: 50px;
+}
+
+/* página 4 ------------------------------------- */
+.vignette{
+    overflow: hidden;
+}
+/* viñeta 8 */
+.vignette__8,
+.vignette__9{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.cat--salto--up{
+    position: absolute;
+    top: 100px;
+    height: 6em;
+    width: 10em;
+    
+}
+.cat__head--salto--up{
+    left: 8px;
+    top: -35px;
+    width: 8em;
+}
+.cat__paw--salto--up{
+    width: 2.2em;
+    height: 2.2em;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+}
+.cat__paw--salto--right{
+    left: 110px;
+}
+.cat__paw--salto--up::after{
+    left: 5px;
+    top: 13px;
+}
+.cat__paw--salto--up::before{
+    left: 20px;
+    top: 13px;
+}
+.cama{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #000000, #303333, #4f5151, #aeafaf);
+    transform: rotate(180deg);
+}
+.cama::after{
+    content: '';
+    display: inline-block;
+    width: 80%;
+    bottom: 10;
+    right: 10%;
+    height: calc(100% - 3.5em);
+    background-color: white;
+    position: absolute;
+}
+
+/* viñeta 9 */
+.nose--vignette__9{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    height: 2.5em;
+    width: 2.5em;
+}
+.boca{
+    top: 100px;
+    left: 50px;
+    width: 5.5em;
+    
+    background-image: url(../asets/ceja-boca1.svg);
 }
