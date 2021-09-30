@@ -17,7 +17,9 @@
 /* Main -----------------------------------------------*/
 .page{
     height: 70vh;
+    max-height: 400px;
     width: 80%;
+    max-width: 800px;
     margin: 0 auto;
     border: 3px solid black;
 }
@@ -71,23 +73,14 @@
 .eyebrows{
     position: absolute;
     top: 10px;
-    left: calc(50% - 58px);
+    left: calc(50% - 40px);
 
-    height: 5em;
-    width: 7em;
-    border-radius: 50%;
-    border: .6em solid black;
+    height: 2em;
+    width: 4em;
+    background-image: url(../asets/ceja-boca1.svg);
+    background-repeat: no-repeat;
 }
-.eyebrows::before{
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: -20%;
-    display: inline-block;
-    height: 5em;
-    width: 8em;
-    background-color: white;
-}
+
 
 /* viñeta 2 */
 .eyes{
@@ -102,10 +95,69 @@
     background-color: black;
 }
 
+/* viñeta 3 */
+.bet{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 35em;
+    overflow: hidden;
+    margin: 80px auto;
+    border-radius: 10px;
+    border: .2em solid black;
+}
+.bet::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 37%;
+    left: -200%;
+    height: 200%;
+    width: 500%;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid black;
+}
+.almohada{
+    height: 35%;
+    width: 85%;
+    margin: 4px auto;
+    border-radius: 20px;
+    border: .2em solid black;
+}
 
+.karen{
+  
+}
+
+
+.kare__eyes{
+    position: absolute;
+    top: 35px;
+    z-index: 10;
+    height: 1.7em;
+    width: .5em;
+    border-radius: 30px;
+    background-color: black;
+}
+.eye--left{
+    left: 40px;
+}
+.eye--right{
+    right: 40px;
+}    
+.karen__nose{
+    top: 55px;
+    left: calc(50% - .5em);
+    height: 1.2em;
+    width: 1.3em;
+    border-radius: 30px;
+    background-color: burlywood;
+}
 
 /* página 2 ------------------------------------------ */
-.page--2{
+.page--2,
+.page--3{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -217,4 +269,140 @@
     position: absolute;
     top: 0;
     background-color: black;
+}
+/* página 3 ------------------------------------- */
+.vignette__6,
+.vignette__7{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 95%;
+    border: 3px solid black;
+}
+.vignette__6{
+    align-items: flex-end;
+    width: 55%;
+    min-width: 16em;
+}
+.vignette__7{
+    width: 35%;
+}
+
+/* viñeta 6 */
+.cat__head{
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 85px);
+    width: 10em;
+    z-index: 10;
+}
+.cat__body,
+.cat__paw{
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.cat__body{
+    position: relative;
+    top: 80px;
+    height: 10em;
+    width: 16em;
+}
+.cape__inside{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    border-radius: 50%;
+    overflow: hidden;
+}
+.cape__inside{
+    
+}
+.cat__paw{
+    position: absolute;
+    width: 3.5em;
+    height: 3.5em;
+    bottom: 55px;
+    left: 30px;
+}
+.cat__paw--right{
+    left: 150px;
+}
+.cat__paw::after,
+.cat__paw::before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    height: 2em;
+    width: 3px;
+    background-color: black;
+}
+.cat__paw::after{
+    left: 10px;
+}
+.cat__paw::before{
+    left: 30px;
+}
+.cape{
+    position: absolute;
+    bottom: 80px;
+    right: 40px;
+    height: 6.5em;
+    width: 17.5em;
+    animation-name: cape;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    background-image: url(../asets/capa1.svg);
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes cape{
+    0%{
+        background-image: url(../asets/capa1.svg);
+    }
+    15%{
+        background-image: url(../asets/capa2.svg);
+    }
+    30%{
+        background-image: url(../asets/capa3.svg);
+    }
+    45%{
+        background-image: url(../asets/capa4.svg);
+        top: -40px;
+        left: -70px;
+    }
+    60%{
+        background-image: url(../asets/capa5.svg);
+    }
+    80%{
+        background-image: url(../asets/capa3.svg);
+    }
+    95%{
+        background-image: url(../asets/capa2.svg);
+    }
+}
+/* viñeta 7 */
+.cat--salto{
+    height: 9em;
+    width: 15em;
+}
+.cat--salto::after{
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 70px;
+    left: -3px;
+    z-index: 20;
+    width: 103%;
+    height: 100%;
+    background-color: white;
+    border-top: 3px solid black;
+}
+.cat__paw--salto{
+    width: 3em;
+    height: 3em;
+    bottom: 50px;
 }
