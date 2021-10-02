@@ -129,14 +129,16 @@
     border: .2em solid black;
 }
 
-/* .karen{
-  
-} */
-
+.karen__body{
+    width: auto;
+    height: auto;
+    position: relative;
+}
 
 .kare__eyes{
     position: absolute;
-    top: 35px;
+    top: 100px;
+    left: 105px;
     z-index: 10;
     height: 1.7em;
     width: .5em;
@@ -144,14 +146,16 @@
     background-color: black;
 }
 .eye--left{
-    left: 40px;
+    left: 175px;
 }
 .eye--right{
     right: 40px;
 }    
 .karen__nose{
-    top: 55px;
-    left: calc(50% - .5em);
+    z-index: 10;
+    position: absolute;
+    top: 125px;
+    left: calc(50% - 1.2em);
     height: 1.2em;
     width: 1.3em;
     border-radius: 30px;
@@ -483,4 +487,24 @@
     width: 5.5em;
     
     background-image: url(../asets/ceja-boca1.svg);
+}
+
+/* viñeta 10 */
+.cat--sleep{
+    z-index: 30;
+    width: 200px;
+    position: absolute;
+    top: 170px;
+    /* left: 130px; */
+}
+.eyes__sleep--final{
+    top: 110px;
+    width: 2em;
+    height: .5em;
+}
+.eye__sleep--left{
+    left: 90px;
+}
+.eye__sleep--right{
+    left: 165px;
 }
